@@ -80,3 +80,6 @@ Draft Pull Requestを使うと、こんなときに効果を発揮する
 
 # 参考資料
 - [gitコマンドがgitリポジトリを探す順番](https://qnighy.hatenablog.com/entry/2017/03/11/233134)
+- [GithubでのWeb上からのマージの仕方3種とその使いどころ](https://qiita.com/ko-he-8/items/94e872f2154829c868df)
+- [あなたはmerge派？rebase派？綺麗なGitログで実感したメリット](https://style.biglobe.co.jp/entry/2022/03/22/090000)
+
