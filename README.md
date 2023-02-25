@@ -60,6 +60,19 @@ git remote -v
 git push -u origin main
 ```
 
+##  git branch
+```sh
+# ブランチを作成
+git branch newBranch
+
+# ブランチリスト確認
+git branch
+```
+
+```sh
+
+git checkout
+```
 
 # 参考資料
 - [gitコマンドがgitリポジトリを探す順番](https://qnighy.hatenablog.com/entry/2017/03/11/233134)
