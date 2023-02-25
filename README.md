@@ -67,16 +67,16 @@ git branch newBranch
 
 # ブランチリスト確認
 git branch
-```
-
-```sh
-
-git checkout
+# ブランチの切り替え
+git checkout <ブランチ名>
 ```
 
 ## Pull Request
-Draft Pull Request
+Draft Pull Requestを使うと、こんなときに効果を発揮する
+- まだマージはしないが実装したコードを見てもらいたい時
+- コードの実装方針についてディスカッションをしたい時
 
+[GitHubのDraft Pull Request を活用](https://developer.so-tech.co.jp/entry/2022/09/14/120000)
 
 # 参考資料
 - [gitコマンドがgitリポジトリを探す順番](https://qnighy.hatenablog.com/entry/2017/03/11/233134)
