@@ -89,6 +89,7 @@ git merge <取り込みたいブランチ名>
 # 例　git merge　test-branch
 ```
 - [Git のブランチ機能 - ブランチとマージの基本](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B8%E3%81%AE%E5%9F%BA%E6%9C%AC)
+- [Git でrebaseを迷わず活用できるようになる](https://techblog.ap-com.co.jp/entry/2022/06/02/120001)
 
 ## リモートのブランチを削除する
 ```sh
@@ -130,4 +131,5 @@ git rebase <とってきたいコミットを持つブランチ名>
 - [GithubでのWeb上からのマージの仕方3種とその使いどころ](https://qiita.com/ko-he-8/items/94e872f2154829c868df)
 - [あなたはmerge派？rebase派？綺麗なGitログで実感したメリット](https://style.biglobe.co.jp/entry/2022/03/22/090000)
 - [【Git】git-flowを知ろう！　利用時のルールについて](https://cloudsmith.co.jp/blog/efficient/2020/08/1534208.html)
+- [忘れがちなGitチートシート](https://qiita.com/kurogoma939/items/232e73c905ebe11345ac)
 
