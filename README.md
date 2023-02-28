@@ -117,7 +117,11 @@ git branch
 git checkout feature
 
 # mainブランチに、featureブランチのコミット履歴を挿入する。その際、featureブランチの存在は消滅する
+# はmainブランチにブランチを切ったで行なった作業内容を含めたい為、mainブランチを選択する
+# 基本的な運用として、mainやdevelop等の核となるブランチに対して、リベースを行う
 git rebase <とってきたいコミットを持つブランチ名>
+# or
+git rebase <つなぐ元にするブランチ名>
 # 例　git rebase main
 ```
 - [Git のブランチ機能 - リベース](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%AA%E3%83%99%E3%83%BC%E3%82%B9)
