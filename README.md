@@ -80,13 +80,13 @@ git branch
 * main
   test-branch
 
- # git checkoutでマージ元のブランチに移動する
+# git checkoutでマージ元のブランチに移動する
 git branch main
 
 # 現在のブランチに対して、マージしたいブランチを指定する
 # 取り込み元のブランチに移動した後、取り込みたいブランチ名を指定する
 git merge <取り込みたいブランチ名>
-# 例　git merge　test-branch
+# 例 git merge test-branch
 ```
 - [Git のブランチ機能 - ブランチとマージの基本](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%83%9E%E3%83%BC%E3%82%B8%E3%81%AE%E5%9F%BA%E6%9C%AC)
 - [Git でrebaseを迷わず活用できるようになる](https://techblog.ap-com.co.jp/entry/2022/06/02/120001)
@@ -111,7 +111,7 @@ git push <remote> :<branch>
 # 取り込むブランチに移動する
 git branch
 * main
-  feature
+ feature
 
 # featureブランチに移動
 git checkout feature
@@ -122,7 +122,7 @@ git checkout feature
 git rebase <とってきたいコミットを持つブランチ名>
 # or
 git rebase <つなぐ元にするブランチ名>
-# 例　git rebase main
+# 例 git rebase main
 ```
 - [Git のブランチ機能 - リベース](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%AA%E3%83%99%E3%83%BC%E3%82%B9)
 
