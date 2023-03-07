@@ -103,11 +103,9 @@ git push <remote> :<branch>
 - [【Git入門】git mergeの使い方！コマンドでブランチをマージする](https://codelikes.com/git-merge/)
 
 ## git rebase
+git rebaseは、コミット履歴を移動したり修正、削除したりするコマンド
+分かり易く説明すると枝分かれの枝を根本からポッキっと追って、本流にくっつけるイメージ
 ```sh
-# git rebaseは、コミット履歴を移動したり修正、削除したりするコマンド
-# 分かり易く説明すると枝分かれの枝を根本からポッキっと追って、本流にくっつけるイメージ
-
-# 操作方法
 # 取り込むブランチに移動する
 git branch
 * main
@@ -125,6 +123,40 @@ git rebase <つなぐ元にするブランチ名>
 # 例　git rebase main
 ```
 - [Git のブランチ機能 - リベース](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%AA%E3%83%99%E3%83%BC%E3%82%B9)
+
+## cherry-pick
+特定のコミットを別のブランチに取り込む為の機能
+
+```sh
+# 1コミットだけ取り込む場合
+git cherry-pick [取り込むコミットID]
+
+# 複数コミットを取り込む場合
+git cherry-pick [コミットID(A)]..[コミットID(B)]
+
+# ログを確認
+git log
+```
+- [git cherry-pickを完全マスター!特定コミットのみを取り込む方法](https://www.sejuku.net/blog/71544)
+- [Git のチェリーピック](https://www.atlassian.com/ja/git/tutorials/cherry-pick)
+
+## git stash
+作業中の変更を一時的に保存し、後で復元できるようにする為の機能
+```sh
+# 作業を退避 + メッセージを付与
+git stash save "stash message"
+
+# 退避した作業の一覧を見る
+git stash list
+
+# 退避した作業を戻す
+git stash apply stash@{0}
+# 戻したい作業の番号を{}に指定する
+
+# 退避した作業を消す
+git stash drop stash@{0}
+```
+- [【git stash】コミットはせずに変更を退避したいとき](https://qiita.com/chihiro/items/f373873d5c2dfbd03250)
 
 # リモート環境 or githubで行うgit操作一覧
 ## Pull Request
